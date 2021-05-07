@@ -1,0 +1,26 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "run-p watch:*",
+    "watch:build": "sh -exec 'NODE_ENV=\\\"development\\\" node ./build.js'",
+    "watch:serve": "wait-on public/index.js && reload -d public -b"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.11.19",
+    "npm-run-all": "^4.1.5",
+    "reload": "^3.1.1",
+    "wait-on": "^5.3.0"
+  }
+}
